@@ -8,6 +8,11 @@
     <title>Time Table</title>
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             display: grid;
             place-items: center;
@@ -26,25 +31,29 @@
     
         table {
             border-collapse: collapse;
-            width: 75vw;
+            width: calc((100vw - 40vw));
             height: 30rem;
         }
     
         tr:nth-child(odd) {
-            background-color: Lightgreen;
+            background-color: rgb(244, 245, 246);
+        }
+        tr:nth-child(even) {
+            background-color:#D3D3D3
+;
         }
     
         th:nth-child(1) {
-            background-color: rgb(218, 233, 218);
+            background-color: rgb(144, 188, 202);
         }
     
         td:hover {
-            background-color: #9caf75;
+            background-color: #8e9286;
             color: #000000;
         }
     
         th:hover {
-            background-color: #73c3ba;
+            background-color: #e4eceb;
             color: #000000;
         }
     
@@ -113,10 +122,10 @@
             <th>09.00 A.M. To 09.50 A.M.</th>
             <th>09.50 A.M. To 10.40 A.M.</th>
             <th>10.55 A.M. To 11.40 A.M.</th>
-            <th>11.40 A.M. To 12.30 A.M.</th>
-            <th>01.30 A.M. To 02.20 A.M.</th>
-            <th>02.20 A.M. To 03.10 A.M.</th>
-            <th>03.10 A.M. To 04.00 A.M.</th>
+            <th>11.40 A.M. To 12.30 P.M.</th>
+            <th>01.30 P.M. To 02.20 P.M.</th>
+            <th>02.20 P.M. To 03.10 P.M.</th>
+            <th>03.10 P.M. To 04.00 P.M.</th>
         </tr>
         <tr>
             <th>MON</th>
@@ -166,100 +175,5 @@
     </table>
 
 </body>
-<style>
-    body {
-        display: grid;
-        place-items: center;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    table,
-    tr,
-    th,
-    td {
-        border: 2px solid #000000;
-        text-align: center;
-        padding: 5px;
-    }
-
-    table {
-        border-collapse: collapse;
-        width: 75vw;
-        height: 30rem;
-    }
-
-    tr:nth-child(odd) {
-        background-color: Lightgreen;
-    }
-
-    th:nth-child(1) {
-        background-color: rgb(218, 233, 218);
-    }
-
-    td:hover {
-        background-color: #9caf75;
-        color: #000000;
-    }
-
-    th:hover {
-        background-color: #73c3ba;
-        color: #000000;
-    }
-
-    @media screen and (max-width:140rem) {
-
-        table,
-        tr,
-        th,
-        td {
-            padding: 3px;
-        }
-
-        table {
-            width: 60vw;
-        }
-
-    }
-
-    @media screen and (max-width:96rem) {
-
-        h1 {
-            font-size: 1rem;
-        }
-
-        table {
-            width: 90vw;
-        }
-    }
-
-    @media screen and (max-width:76rem) {
-
-
-        #hide {
-            display: none;
-        }
-
-        tr,
-        th,
-        td {
-            display: inline-block;
-            width: 50%;
-        }
-
-    }
-
-    @media screen and (max-width:56rem) {
-
-        tr,
-        th,
-        td {
-
-            width: 80%;
-        }
-
-    }
-
-</style>
 
 </html>
